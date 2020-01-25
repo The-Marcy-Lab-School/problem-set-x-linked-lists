@@ -12,6 +12,7 @@ Answer: The tradeoffs between singly linked lists and doubly linked lists are tr
 
 **3. What are the run times for insertion, deletion, and accessing from linked lists?**
 Answer: The run times for insertion and deletion is constant `0(1)` and accessing from  linked lists are linear`0(n)` because you will have to traverse the entire to access the element you are looking for.
+
 **4. What is an abstract data type?**
 Answer: An abstract data type are definitions of data and operations but do not have implementation details. For example if a user look at his Iphone he will see what his is know as a UI(User Interface) but under the hood of the Iphone, the implementation is just a bunch of class and function that makes the easier and user friendly to use.  
 
