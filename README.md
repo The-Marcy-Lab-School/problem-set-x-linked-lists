@@ -5,11 +5,13 @@ Answer short response questions directly within this document. Format your respo
 
 ### Short Response
 **1. What are the tradeoffs between linked lists and arrays?**
+     Accessing a Value in a LinkedList is in linear runtime compared to an arrays constant runtime.
+     Conversly writing or deleting from a linked list is constant while its Linear for arrays.
 
 **2. What are the tradeoffs between singly linked lists and doubly linked lists?**
 
 **3. What are the run times for insertion, deletion, and accessing from linked lists?**
-
+    Insertion and Deletion to a linked list is constant while accessing is in linear runtime.
 **4. What is an abstract data type?**
 
 ### Coding Challenges

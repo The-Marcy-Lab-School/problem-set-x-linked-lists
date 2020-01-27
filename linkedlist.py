@@ -69,23 +69,6 @@ class LinkedList:
                 return deleted
             current = current.next
         return None
-        
-new_list = LinkedList()
-new_list.append(2)
-new_list.append(3)
-new_list.append(4)
-new_list.append(5)
-new_list.append(6)
-
-'''
-print(3 in new_list)
-print(100 not in new_list)
-print(new_list)
-
-print(new_list.head)
-print(new_list.head.next)
-'''
-
 
 def is_cyclic(head: Node) -> bool:
         slow = head
@@ -98,18 +81,6 @@ def is_cyclic(head: Node) -> bool:
                 return True
             
         return False   
-
-a = Node(1)
-b = Node(2)
-c = Node(3)
-d = Node(4)
-a.next = b
-b.next = c
-c.next = d
-d.next = a
-'''
-print(is_cyclic(a))
-'''
 
 def reverse(head: Node):
     current = head
@@ -127,12 +98,62 @@ def reverse(head: Node):
         
     return previous
     
-a = Node(1)
-b = Node(2)
-c = Node(3)
-d = Node(4)
-a.next = b
-b.next = c
-c.next = d
 
-print(reverse(a) == d)
+def merge_lists(head1, head2):
+    if head1 is None:
+        return head2
+    if head2 is None:
+        return head1
+
+    # create dummy node to avoid additional checks in loop
+    tail = temp = Node() 
+    while not (head1 is None or head2 is None):
+        if head1.data < head2.data:
+            # remember current low-node
+            current = head1
+            # follow ->next
+            head1 = head1.next
+        else:
+            # remember current low-node
+            current = head2
+            # follow ->next
+            head2 = head2.next
+
+        # only mutate the node AFTER we have followed ->next
+        temp.next = current          
+        # and make sure we also advance the temp
+        temp = temp.next
+
+    temp.next = head1 or head2
+
+    # return tail of dummy node
+    return tail.next
+
+def merge( h1, h2): 
+    if (h1 == None): 
+        return h2 
+    if (h2 == None): 
+        return h1 
+  
+    if (h1.data < h2.data): 
+        h1.next = merge(h1.next, h2) 
+        return h1 
+      
+    else: 
+        h2.next = merge(h1, h2.next) 
+        return h2
+        
+def remove_duplicates(head):
+    current = head
+    prev = None
+    dic = {}
+    while current:
+        if current.data in dic:
+            # Remove node
+            prev.next = current.next
+            current = None
+        else:
+            # Did not see element yet.
+            dic[current.data] = 1
+            prev = current
+        current = prev.next    
