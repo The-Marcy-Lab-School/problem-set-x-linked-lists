@@ -10,9 +10,15 @@ Answer short response questions directly within this document. Format your respo
 
 **2. What are the tradeoffs between singly linked lists and doubly linked lists?**
 
+   Singly linked lists can only be traversed in one direction, starting with the head, 
+    while doubly linked lists can be traversed from the tail since its nodes hold a reference to the previous node. 
+    This means nodes of a doubly linked list take more space, and manipulations like insertion and deletions are more complex because of the additional reference.
+
 **3. What are the run times for insertion, deletion, and accessing from linked lists?**
     Insertion and Deletion to a linked list is constant while accessing is in linear runtime.
 **4. What is an abstract data type?**
+
+   An abstract data type is a class of object used to store data where the precise functionality and fundamental data structures are abstracted away allowing us to design an interface to interact with it.
 
 ### Coding Challenges
 1. Implement a `LinkedList` class. Be sure to implement all listed class methods in `linkedlist.py`.
