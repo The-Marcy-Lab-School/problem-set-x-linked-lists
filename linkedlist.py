@@ -1,68 +1,75 @@
 # Question 1: Implement a Linked List
-
 class Node:
-    def __init__(self, data=None):
-        self.value = data
-        self.next = None
+    def __init__(self, value = None):
+        self.value = value
+        self.next_node = None
 
     def __repr__(self):
-        return f"{self.value} -> {self.next}"
+        return f"{self.value}"
 
-class LinkedList:
-    def __init__(self, head=None):
+class LinkedList():
+    def __init__(self, head = None):
         self.head = head
 
-    def __repr__(self):
-        rep = "" + self.head.value
-        while self.head.next:
-            rep += f"-> {self.head.next.value}"
-            self.head = self.head.next
-
     def __len__(self):
-        c = 0
-        while self.head:
-            c += 1
-            self.head = self.head.next
-        return c
+        count = 0
+        current = self.head
+        while current:
+            count += 1
+            current = current.next_node
+        return count
+
+    def __repr__(self):
+        if len(self) == 0:
+            return 'This list is empty'
+        if len(self) == 1:
+            return f"{self.head}"
+        f = ""
+        current = self.head
+        while current:
+            f += f"{current}->"
+            current = current.next_node
+        return f + 'None'
 
     def __iter__(self):
-        while self.head:
-            yield self.head
-            self.head = self.head.next
+        current = self.head
+        while current:
+            yield current
+            current = current.next_node
 
-    def __contains__(self, data):
-        while self.head:
-            if self.head.value == data:
+    def __contains__(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
                 return True
-            self.head = self.head.next
+            current = current.next_node
         return False
 
-    def append(self, data):
-        while self.head:
-            self.head = self.head.next
-        self.head.next = Node(data)
+    def append(self, value):
+        new_node = Node(value)
+        new_node.next_node = self.head
+        self.head = new_node
 
-    def delete(self, node):
+    def delete(self, value): # cannot erase last node -- TO FIX
+        if len(self) == 0:
+            return 'Cannot delete from empty list'
         current = self.head
-        if self.__len__() == 1:
-            if self.head == node:
-                self.head = None
-        previous = None
-        while current:
-            previous = current
-            current = current.next
-            if current == node:
-                previous.next == current.next
-                current.next = None
+        if current.value == value:
+            self.head = current.next_node
+            return
+        while current.next_node:
+            if current.next_node.value == value:
+                current.next_node = current.next_node.next_node
+            current = current.next_node
 
-# Question 2: Cycle Check
-def is_cyclic(head: Node) -> bool:
+#Question 2: Cycle Check
+def is_cyclic(head: Node) -> Node:
     fast = head
     slow = head
     while slow:
-        slow = slow.next
-        fast = fast.next.next
-        if slow == next:
+        slow = slow.next_node
+        fast = fast.next_node.next_node
+        if slow == fast:
             return True
     return False
 
@@ -72,47 +79,51 @@ def reverse(head: Node) -> Node:
     pre = None
     nxt = None
     while current:
-        nxt = current.next
-        current.next = pre
+        nxt = current.next_node
+        current.next_node = pre
         pre = current
         current = nxt
     return pre
 
 # Question 4: Merge Two Lists
 def merge_two_list(l1: Node, l2: Node) -> Node:
-    if l1.value < l2.value:
-        head = l1
-        cur = l1
-        alt = l2
-    else:
-        head = l2
-        cur = l2
-        alt = l1
-    nxt = cur.next
-    while cur:
-        if nxt.value > alt.value:
-            cur.next = alt
-            cur = cur.next
-            alt = nxt
-            nxt = cur.next
+    if l1 is None:
+        return l2
+    if l2 is None:
+        return l1
+    d_tail = Node()
+    while not (l1 is None or l2 is None):
+        if l1.value < l2.value:
+            current = l1
+            l1 = l1.next
         else:
-            cur = cur.next
-            nxt = cur.next
-    return head
+            current = l2
+            l2 = l2.next
+        d_tail.next_node = current
+        d_tail = placeholder.next_node
+    d_tail.next_node = l1 or l2
+    return d_tail.next_node
+
 
 # Question 5: Remove duplicates
 def remove_dups(head: Node) -> Node:
-    cur = head
-    while cur:
-        nxt = cur.next
-        if cur.value == nxt.value:
-            cur.next = nxt.next
-        cur = cur.nxt
+    current = head
+    while current:
+        nxt = current.next_node
+        if current.value == nxt.value:
+            current.next_node = nxt.next_node
+        current = current.next_node
     return head
 
-if __name__ == "__main__":
-    list1 = LinkedList(range(0, 100, 10))
-    print(list1) # testing repr
-    print(50 in list1, 110 not in list1) # testing contains
-    list1.delete(50) # testing delete
-    print(len(list1) == 9, 50 not in list1) # testing size
+
+# For Testing
+a = Node(1)
+b = Node(2)
+c = Node(3)
+d = Node(4)
+e = Node(5)
+
+a.next_node = b
+b.next_node = c
+c.next_node = d
+d.next_node = e
