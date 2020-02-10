@@ -50,16 +50,16 @@ class LinkedList():
         new_node.next_node = self.head
         self.head = new_node
 
-    def delete(self, value): # cannot erase last node -- TO FIX
+    def delete(self, value):
         if len(self) == 0:
             return 'Cannot delete from empty list'
-        current = self.head
-        if current.value == value:
-            self.head = current.next_node
-            return
-        while current.next_node:
+        d_node = Node()
+        d_node.next_node = self.head
+        current = d_node
+        while current:
             if current.next_node.value == value:
                 current.next_node = current.next_node.next_node
+                return
             current = current.next_node
 
 #Question 2: Cycle Check
@@ -100,7 +100,7 @@ def merge_two_list(l1: Node, l2: Node) -> Node:
             current = l2
             l2 = l2.next
         d_tail.next_node = current
-        d_tail = placeholder.next_node
+        d_tail = d_tail.next_node
     d_tail.next_node = l1 or l2
     return d_tail.next_node
 
