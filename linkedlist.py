@@ -53,6 +53,9 @@ class LinkedList():
     def delete(self, value):
         if len(self) == 0:
             return 'Cannot delete from empty list'
+        if self.head.value == value:
+            self.head = self.head.next_node
+            return
         d_node = Node()
         d_node.next_node = self.head
         current = d_node
