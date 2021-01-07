@@ -125,23 +125,23 @@ describe('mergeLists', () => {
     it('merges two linked lists', () => {
         let firstNode = new Node(1);
         let secondNode = new Node(2);
-        let thirdNode = new Node(3);
+        let thirdNode = new Node(4);
         firstNode.next = secondNode;
         secondNode.next = thirdNode;
 
-        let fourthNode = new Node(4);
-        let fifthNode = new Node(5);
-        let sixthNode = new Node(6);
+        let fourthNode = new Node(1);
+        let fifthNode = new Node(3);
+        let sixthNode = new Node(4);
         fourthNode.next = fifthNode;
         fifthNode.next = sixthNode;
 
         let list = mergeLists(firstNode, fourthNode);
         expect(firstNode.data).toEqual(1);
-        expect(firstNode.next.data).toEqual(4);
+        expect(firstNode.next.data).toEqual(1);
         expect(firstNode.next.next.data).toEqual(2);
-        expect(firstNode.next.next.next.data).toEqual(5);
-        expect(firstNode.next.next.next.next.data).toEqual(3);
-        expect(firstNode.next.next.next.next.next.data).toEqual(6);
+        expect(firstNode.next.next.next.data).toEqual(3);
+        expect(firstNode.next.next.next.next.data).toEqual(4);
+        expect(firstNode.next.next.next.next.next.data).toEqual(4);
     })
 })
 
