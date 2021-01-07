@@ -18,6 +18,10 @@ class LinkedList {
     prependToHead(data){ // add new Node with data to head
 
     }
+    
+    removeHead() { // removed the first Node in the LinkedList
+    
+    }
 
     contains(data){ // returns true is any Node in the LinkedList contains data, false otherwise
 
