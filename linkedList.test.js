@@ -135,7 +135,7 @@ describe('mergeLists', () => {
         fourthNode.next = fifthNode;
         fifthNode.next = sixthNode;
 
-        let list = mergeLists(firstNode, fourthNode);
+        firstNode = mergeLists(firstNode, fourthNode);
         expect(firstNode.data).toEqual(1);
         expect(firstNode.next.data).toEqual(1);
         expect(firstNode.next.next.data).toEqual(2);
