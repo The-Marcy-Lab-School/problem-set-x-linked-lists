@@ -1,0 +1,22 @@
+{
+  "name": "problem-set-11_2_linked_lists",
+  "version": "1.0.0",
+  "description": "## Directions Answer short response questions directly within this document. Format your responses with proper Markdown. Complete code challenges in `linkedlist.py` or `linkedList.js`.",
+  "main": "linkedList.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Marcy-Lab-School/problem-set-11_2_linked_lists.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Marcy-Lab-School/problem-set-11_2_linked_lists/issues"
+  },
+  "homepage": "https://github.com/The-Marcy-Lab-School/problem-set-11_2_linked_lists#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
