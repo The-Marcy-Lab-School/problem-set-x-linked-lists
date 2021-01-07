@@ -29,12 +29,12 @@ class LinkedList {
 }
 
 // Question 2: Cycle Check
-const isCyclic = (node) => {
+const isCyclic = (linkedList) => {
 
 };
 
 // Question 3: Reverse a Linked List
-const reverse = (node) => {
+const reverse = (linkedList) => {
 
 };
 
@@ -44,6 +44,6 @@ const mergeLists = (l1, l2) => {
 };
 
 // Question 5: Remove duplicates
-const removeDuplicates = (node) => {
+const removeDuplicates = (linkedList) => {
 
 };
