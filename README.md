@@ -1,7 +1,7 @@
 # Problem Set 11.2 - Linked Lists
 
 ## Directions
-Answer short response questions directly within this document. Format your responses with proper Markdown. Complete code challenges in `linkedlist.py`.
+Answer short response questions directly within this document. Format your responses with proper Markdown. Complete code challenges in `linkedlist.py` or `linkedList.js`.
 
 ### Short Response
 **1. What are the tradeoffs between linked lists and arrays?**
@@ -13,7 +13,7 @@ Answer short response questions directly within this document. Format your respo
 **4. What is an abstract data type?**
 
 ### Coding Challenges
-1. Implement a `LinkedList` class. Be sure to implement all listed class methods in `linkedlist.py`.
+1. Implement a `LinkedList` class that responds to all of the listed class methods.
 
 2. Given a singly linked list, write a function which takes in the first node in a singly linked list and returns a boolean indicating if the linked list contains a "cycle". A cycle is when a node's next point actually points back to a previous node in the list. This is also sometimes known as a circularly linked list.
 
@@ -29,4 +29,3 @@ be made by splicing together the nodes of the first two lists.
   ```
 
 5. Write a function that removes duplicates from a linked list and returns the list.
-
