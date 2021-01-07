@@ -137,10 +137,10 @@ describe('mergeLists', () => {
 
         let list = mergeLists(firstNode, fourthNode);
         expect(firstNode.data).toEqual(1);
-        expect(firstNode.next.data).toEqual(2);
-        expect(firstNode.next.next.data).toEqual(3);
-        expect(firstNode.next.next.next.data).toEqual(4);
-        expect(firstNode.next.next.next.next.data).toEqual(5);
+        expect(firstNode.next.data).toEqual(4);
+        expect(firstNode.next.next.data).toEqual(2);
+        expect(firstNode.next.next.next.data).toEqual(5);
+        expect(firstNode.next.next.next.next.data).toEqual(3);
         expect(firstNode.next.next.next.next.next.data).toEqual(6);
     })
 })
