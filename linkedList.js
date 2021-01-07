@@ -11,19 +11,19 @@ class LinkedList {
 
     }
     
-    append(data){
+    appendToTail(data){ // add new Node with data to tail
 
     }
 
-    delete(node){
+    prependToHead(data){ // add new Node with data to head
 
     }
 
-    contains(data){
+    contains(data){ // returns true is any Node in the LinkedList contains data, false otherwise
 
     }
 
-    length(){
+    length(){ //returns the length of the LinkedList as an integer value
 
     }
 }
