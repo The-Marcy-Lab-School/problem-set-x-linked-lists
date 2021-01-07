@@ -7,34 +7,34 @@ class Node {
 }
 
 class LinkedList {
-  append(data){
+    constructor() {
 
-  }
+    }
+    
+    append(data){
 
-  delete(node){
+    }
 
-  }
+    delete(node){
 
-  contains(data){
+    }
 
-  }
+    contains(data){
 
-  length(){
+    }
 
-  }
+    length(){
 
-  forEach(callback){
-
-  }
+    }
 }
 
 // Question 2: Cycle Check
-const isCyclic = (head) => {
+const isCyclic = (node) => {
 
 };
 
 // Question 3: Reverse a Linked List
-const reverse = (head) => {
+const reverse = (node) => {
 
 };
 
@@ -44,6 +44,6 @@ const mergeLists = (l1, l2) => {
 };
 
 // Question 5: Remove duplicates
-const removeDuplicates = (head) => {
+const removeDuplicates = (node) => {
 
 };
