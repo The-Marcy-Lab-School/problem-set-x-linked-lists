@@ -8,7 +8,7 @@ Answer short response questions directly within this document. Format your respo
 
 **2. What are the tradeoffs between singly linked lists and doubly linked lists?**
 
-**3. What are the run times for insertion, deletion, and accessing from linked lists?**
+**3. What is the run times for insertion at the head of a linked lists? What about deletion from the tail? What about searching and accessing some value from the linked list?**
 
 **4. What is an abstract data type?**
 
