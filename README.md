@@ -13,14 +13,13 @@ Answer short response questions directly within this document. Format your respo
 **4. What is an abstract data type?**
 
 ### Coding Challenges
-1. Implement a `LinkedList` class that responds to all of the listed class methods.
+1. Implement a `Node` class and `LinkedList` class. Use Test Driven Development to guide you. Run `npm test` locally to see which tests are failing and implement the needed changes to make them pass. 
 
-2. Given a singly linked list, write a function which takes in the first node in a singly linked list and returns a boolean indicating if the linked list contains a "cycle". A cycle is when a node's next point actually points back to a previous node in the list. This is also sometimes known as a circularly linked list.
+2. Given a the head node of a singly linked list, write a function which returns a boolean indicating if the linked list contains a "cycle". A cycle is when a node's next point actually points back to a previous node in the list. This is also sometimes known as a circularly linked list.
 
-3. Write a function to reverse a linked list in place. The function will take in the head of the list as input and return the new head of the list.
+3. Write a function to reverse a linked list in place. The function will take in the head node of the list as an input and return the new head node of the list.
 
-4. Merge two sorted linked lists and return it as a new list. The new list should
-be made by splicing together the nodes of the first two lists.
+4. Merge two **sorted** linked lists and return it as **a new sorted list**. The new list should be made by splicing together the nodes of the first two lists. 
 
   For example:
   ```
@@ -28,4 +27,4 @@ be made by splicing together the nodes of the first two lists.
   Output: 1->1->2->3->4->4
   ```
 
-5. Write a function that removes duplicates from a linked list and returns the list.
+5. Write a function that removes duplicates from a linked list and returns the head node of the list.
