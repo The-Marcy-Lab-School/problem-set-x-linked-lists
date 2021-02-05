@@ -1,11 +1,12 @@
-# Linked Lists
+# Problem Set: Linked Lists
 
 ## Directions
-Answer short response questions directly within this document. Format your responses with proper Markdown. 
+Respond to short response questions in clear, concise sentences directly within this file. Use markdown to ensure that your answers are formatted correctly.
 
-Complete code challenges in `linkedlist.py` or `linkedList.js`. Use Test Driven Development to guide you.
+Complete code challenges in `linkedlist.py` or `linkedList.js`.
 
-For JavaScript, run `npm install` to download dependencies. Run `npm test` to run tests locally and implement the needed changes to make them pass. 
+Use Test Driven Development to guide you. For JavaScript, run `npm install` to download dependencies. Run `npm test` to run tests locally. Ensure all tests are passing before submitting this problem set.
+
 
 ### Short Response
 **1. What are the tradeoffs between linked lists and arrays?**
