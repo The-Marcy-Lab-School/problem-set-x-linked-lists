@@ -1,7 +1,11 @@
-# Problem Set 11.2 - Linked Lists
+# Linked Lists
 
 ## Directions
-Answer short response questions directly within this document. Format your responses with proper Markdown. Complete code challenges in `linkedlist.py` or `linkedList.js`.
+Answer short response questions directly within this document. Format your responses with proper Markdown. 
+
+Complete code challenges in `linkedlist.py` or `linkedList.js`. Use Test Driven Development to guide you.
+
+For JavaScript, run `npm install` to download dependencies. Run `npm test` to run tests locally and implement the needed changes to make them pass. 
 
 ### Short Response
 **1. What are the tradeoffs between linked lists and arrays?**
@@ -13,7 +17,7 @@ Answer short response questions directly within this document. Format your respo
 **4. What is an abstract data type?**
 
 ### Coding Challenges
-1. Implement a `Node` class and `LinkedList` class. Use Test Driven Development to guide you. Run `npm test` locally to see which tests are failing and implement the needed changes to make them pass. 
+1. Implement a `Node` class and `LinkedList` class. 
 
 2. Given a the head node of a singly linked list, write a function which returns a boolean indicating if the linked list contains a "cycle". A cycle is when a node's next point actually points back to a previous node in the list. This is also sometimes known as a circularly linked list.
 
