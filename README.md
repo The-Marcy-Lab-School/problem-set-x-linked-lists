@@ -3,7 +3,7 @@
 ## Directions
 Respond to short response questions in clear, concise sentences directly within this file. Use markdown to ensure that your answers are formatted correctly.
 
-Complete code challenges in `linkedlist.py` or `linkedList.js`.
+Complete code challenges in `linkedList.js`.
 
 Use Test Driven Development to guide you. For JavaScript, run `npm install` to download dependencies. Run `npm test` to run tests locally. Ensure all tests are passing before submitting this problem set.
 
