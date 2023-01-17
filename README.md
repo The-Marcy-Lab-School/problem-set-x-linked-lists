@@ -17,12 +17,16 @@ Use Test Driven Development to guide you. For JavaScript, run `npm install` to d
 
 #### 4. What is an abstract data type?
 
-## Coding Challenges
+## Class Coding Exercise
 1. Implement a `Node` class and `LinkedList` class. 
 
-2. Given a the head node of a singly linked list, write a function which returns a boolean indicating if the linked list contains a "cycle". A cycle is when a node's next point actually points back to a previous node in the list. This is also sometimes known as a circularly linked list.
+## Interview Problems
 
-3. Write a function to reverse a linked list in place. The function will take in the head node of the list as an input and return the new head node of the list.
+These are common interview problems and you can find an algorithm to solve them online. We encourage you to **spend at least 15 minutes** attempting to come up with an algorithm on your own before looking it up. If you find an algorithm online, **STOP before copying** and take time to **internalize the algorithm**.
+
+2. Given the head node of a singly linked list, write a function which returns a boolean indicating if the linked list contains a "cycle". A cycle is when a node's `next` pointer points back to a previous node in the list. This is also sometimes known as a circularly linked list.
+
+3. Write a function to reverse a linked list **in place** (don't make a new linked list). The function will take in the head node of the list as an input and return the new head node of the list.
 
 4. Merge two **sorted** linked lists and return **a new sorted list**. The new list should be made by splicing together the nodes of the first two lists. 
 
