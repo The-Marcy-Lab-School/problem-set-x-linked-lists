@@ -7,28 +7,25 @@ Complete code challenges in `linkedList.js`.
 
 Use Test Driven Development to guide you. For JavaScript, run `npm install` to download dependencies. Run `npm test` to run tests locally. Ensure all tests are passing before submitting this problem set.
 
-
 ## Short Response
-#### 1. What are the tradeoffs between linked lists and arrays?
 
-#### 2. What are the tradeoffs between singly linked lists and doubly linked lists?
-
-#### 3. What is the run times for insertion at the head of a singly linked lists? What about deletion from the tail? What about searching and accessing some value from the singly linked list?
-
-#### 4. What is an abstract data type?
+Do them first! There are only 4 questions.
 
 ## Class Coding Exercise
+
 1. Implement a `Node` class and `LinkedList` class. 
 
 ## Interview Problems
 
-These are common interview problems and you can find an algorithm to solve them online. We encourage you to **spend at least 15 minutes** attempting to come up with an algorithm on your own before looking it up. If you find an algorithm online, **STOP before copying** and take time to **internalize the algorithm**.
+These are common interview problems and you can find an algorithm to solve them online. That's okay!
 
-2. Given the head node of a singly linked list, write a function which returns a boolean indicating if the linked list contains a "cycle". A cycle is when a node's `next` pointer points back to a previous node in the list. This is also sometimes known as a circularly linked list.
+However, we encourage you to **spend at least 15 minutes** attempting to come up with an algorithm on your own before looking it up. If you find an algorithm online, **STOP before copying** and take time to **internalize the algorithm**.
 
-3. Write a function to reverse a linked list **in place** (don't make a new linked list). The function will take in the head node of the list as an input and return the new head node of the list.
+1. Given the head node of a singly linked list, write a function which returns a boolean indicating if the linked list contains a "cycle". A cycle is when a node's `next` pointer points back to a previous node in the list. This is also sometimes known as a circularly linked list.
 
-4. Merge two **sorted** linked lists and return **a new sorted list**. The new list should be made by splicing together the nodes of the first two lists. 
+2. Write a function to reverse a linked list **in place** (don't make a new linked list). The function will take in the head node of the list as an input and return the new head node of the list.
+
+3. Merge two **sorted** linked lists and return **a new sorted list**. The new list should be made by splicing together the nodes of the first two lists. 
 
   For example:
   ```
